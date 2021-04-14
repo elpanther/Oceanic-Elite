@@ -1,0 +1,54 @@
+
+/* Background Color */
+body {
+    background-color: #F5F7FF;
+}
+
+/* About Us Section CSS - Delaware Assure */
+
+.about-us-section { 
+	background-color: #80A2DA;
+	margin: 0px;
+    padding: 50px;
+	width:100%;
+	height:386px;
+	position:absolute;
+	left:0px;
+	top:88px;
+}
+
+.title-for-about-us { 
+	color:white;
+	width: 228px;
+	height: 32px;
+	position: absolute;
+	left: 210px;
+	top: 140px;
+	font-family: Lato;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.about-us-text { 
+	color: white;
+	width: 364px;
+	height: 88px;
+	position: absolute;
+	left: 210px;
+	top: 170px;
+	font-family: Lato;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.button-for-about-us {
+	width: 269px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #29B7DD;
+	color: white;
+	border: 0px solid white;
+	position:absolute;
+	left: 210px;
+	top: 350px;
+}
