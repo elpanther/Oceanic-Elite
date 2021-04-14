@@ -1,0 +1,43 @@
+body{
+background-color: #F5F7FF;
+}
+
+h2{
+    text-align: center;
+}
+.img1{
+    height: 28%;
+    width: 30%;
+    display: inline;
+}
+
+#para1, #para2{
+ font-size:25px;
+ margin-left: 100px;
+}
+.container, .second-container, .third-container, .fourth-container, .final-container{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    margin-left: 80px;
+    }
+
+    span{
+        font-size: 6vw;
+      }
+      
+        #img2{
+            display: inline;
+        }
+        
+        
+
+        #img3, #img4, #img5{
+            margin-right: 100px;
+            height: 300px;
+            width: 200px;
+        }
+
+        #para3, #para4, #para5{
+            font-size: 25px;
+        }
