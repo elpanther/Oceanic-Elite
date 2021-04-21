@@ -2,6 +2,7 @@
 /* Background Color */
 body {
     background-color: #F5F7FF;
+    border-style: border-box;
 }
 
 .Title-Text {
