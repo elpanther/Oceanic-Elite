@@ -1,4 +1,4 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,12 +67,13 @@ git <!DOCTYPE html>
     <main>
         <!-- Container Wrapper & Filter -->
         <!-- Maybe use grid for a more fluid text and objects -->
-    <section class = "d-flex container-fluid flex-row flex-wrap p-0 m-2">
+    <section class = "d-flex container-fluid flex-row flex-wrap justify-content-start">
                   <!-- Wrapper of Icon Nav -->
-        <div class = "d-flex flex-row border container m-0 p-2 m-1">
+        <div class = "d-flex flex-row left_side border">
 
                     <!-- Mobile Pantry -->
-            <div class = "mobile p-1">
+            <a>
+            <div class = "mobile p-2">
                     <!-- Image-->
                 <div class = "">
                     <img src="Images used/Mobile Pantry.png" height= 75px; width = 85px;>
@@ -80,18 +81,20 @@ git <!DOCTYPE html>
                      <!-- Name -->
                 <span> Mobile Pantry </span>
             </div>
+            </a>
                     <!-- Food Bank -->
-        <div class = "bank p-1">
+        <a>
+        <div class = "bank p-2">
                 <!-- Image-->
                 <div>
                     <img src = "Images used/Food Bank.png" height = 75px; width = 85px;>
                 </div>
                 <!-- Name -->
                 <span>Food Bank</span>
-            </div>
-
+        </div>
+        </a>
                     <!-- Hot Meals -->
-            <div class = "meals p-1">
+            <div class = "meals p-2">
                 <!-- Image-->
                 <div class = "">
                     <img src="Images used/Hot Meals.png" height = 75px; width = 85px;>
@@ -100,7 +103,7 @@ git <!DOCTYPE html>
                 <span>Hot Meals</span>
             </div>
                      <!-- Food Pantry -->
-            <div class = "food p-1">
+            <div class = "food p-2">
                 <!-- Image-->
                 <div>
                     <img src = "Images used/Food Pantry (1).png" height= 75px; width = 85px;>
@@ -109,7 +112,7 @@ git <!DOCTYPE html>
                 <span>Food Pantry</span>
             </div>
                     <!-- All Near Me -->
-            <div class = "all p-1">
+            <div class = "all p-2">
                 <!-- Image-->
                 <div>
                     <img src = "Images used/All near me.png" height= 75px; width = 85px;>
@@ -119,14 +122,33 @@ git <!DOCTYPE html>
             </div>
         </div>
             <!-- Filter -->
-        <div class = "Container">
-            <p>Filter</p>
+        <div class = "right_side">
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Filter
+                </a>
+              </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+            </div>
         </div>
     </section>
+
             <!-- Drop-down menu -->
+    <section>
         <div>
         </div>
-
+    </section>
+    
+    <section>
             <!-- Maps -->
         <div>
         </div>
@@ -134,6 +156,7 @@ git <!DOCTYPE html>
             <!-- Location -->
         <div>
         </div>
+    </section>
     </main>
 
     <footer>
@@ -145,7 +168,10 @@ git <!DOCTYPE html>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script>
+    $('.collapse').collapse()
+</script>
 </div>  
 
 </body>

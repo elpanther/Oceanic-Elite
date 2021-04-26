@@ -7,6 +7,10 @@ body{
 background-color: #F5F7FF;
 }
 
+.left_side{
+  padding: 2%;
+  margin-right: 2%;
+}
 
 
 @media screen and (max-width:640px) {
