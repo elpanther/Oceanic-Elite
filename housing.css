@@ -9,7 +9,11 @@ h2{
 .afford{
   display: flex;
   flex-direction: ;
-  
+}
+
+.homeless{
+  display: flex;
+  flex-direction: right;
 }
 
 * {
