@@ -5,16 +5,11 @@ background-color: #F5F7FF;
 h2{
     text-align: center;
 }
-.img1{
-    height: 28%;
-    width: 30%;
-    display: inline;
+
+.senate{
+    margin-top: 20px;
 }
 
-#para1, #para2{
- font-size:25px;
- margin-left: 100px;
-}
 .container, .second-container, .third-container, .fourth-container, .final-container{
     display: flex;
     margin-bottom: 30px;
@@ -26,18 +21,49 @@ h2{
         font-size: 6vw;
       }
       
-        #img2{
-            display: inline;
+        h2{
+            position: relative;
+            left: 20px;;
         }
-        
-        
+        #img1{
+            position: relative;
+            right:10px;
+        }
 
-        #img3, #img4, #img5{
+        #img1, #img2, #img3, #img4, #img5{
             margin-right: 100px;
             height: 300px;
-            width: 200px;
+            width: 220px;
         }
 
-        #para3, #para4, #para5{
+        #para1, #para2, #para3, #para4, #para5{
             font-size: 25px;
         }
+
+        @media (max-width: 800px) {
+            .container, .second-container, .third-container, .fourth-container, .final-container {
+              flex-direction: column;
+            }
+            h2{
+                text-align: center;
+            }
+            .federal-container{
+                flex-direction: column;
+                left: 0px;
+            }
+        }
+
+        .federal-container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            left: 50px;
+            top: 60px;
+        }
+
+        .group{
+            margin-right: 225px;
+            height: 225px;
+            width: 225px;
+        }
+      
