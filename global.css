@@ -6,13 +6,29 @@
 body{
 background-color: #F5F7FF;
 }
+
+.left_side{
+  padding: 2%;
+  margin-right: 2%;
+}
+
+
+/* Set the size of the div element that contains the map */
+.map {
+  height: 500px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+
 @media screen and (max-width:640px) {
   /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
   img{
       display: none;
   }
   span{
-    font-size: 6vw;
+    font-size: 4vw;
   }
   h1{
     font-size: 9vw;
