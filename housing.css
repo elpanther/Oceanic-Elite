@@ -2,8 +2,18 @@ h1{
     text-align: center;
 }
 
-.Castle{
-    
+h2{
+  text-align: center;
+}
+
+.afford{
+  display: flex;
+  flex-direction: ;
+}
+
+.homeless{
+  display: flex;
+  flex-direction: right;
 }
 
 * {
