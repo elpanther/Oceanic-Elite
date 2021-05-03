@@ -3,6 +3,7 @@ body{
 }
 h1 {
     color: brown;
+    text-align: center;
 }
 .cry {
 
@@ -17,11 +18,12 @@ h1 {
 table, th, td {
     border: 1px solid black;
   }
-<!-- tyring popup -->
 
 .text{
 
     float:right 
 }
+
+.top-buffer { margin: top 60px; }
 
   
