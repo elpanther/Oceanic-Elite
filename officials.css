@@ -8,6 +8,12 @@ h2{
 
 .senate{
     margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#apply{
+    margin-right: 50px;
+
 }
 
 .container, .second-container, .third-container, .fourth-container, .final-container{
@@ -43,12 +49,17 @@ h2{
         @media (max-width: 800px) {
             .container, .second-container, .third-container, .fourth-container, .final-container {
               flex-direction: column;
+            
+            }
+            p{
+                font-size: 20px;
             }
             h2{
                 text-align: center;
             }
             .federal-container{
                 flex-direction: column;
+              
                 left: 0px;
             }
         }
@@ -57,8 +68,6 @@ h2{
             display: flex;
             justify-content: space-between;
             position: relative;
-            left: 50px;
-            top: 60px;
         }
 
         .group{
@@ -66,4 +75,11 @@ h2{
             height: 225px;
             width: 225px;
         }
+
+        .group2{
+            height: 225px;
+            width: 225px;
+            margin-right: 550px;
+        }
+
       
