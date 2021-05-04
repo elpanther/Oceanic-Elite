@@ -9,11 +9,13 @@ h2{
 .afford{
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
 .homeless{
   display: flex;
  justify-content: space-between;
+ align-content: center;
 }
 
 * {
