@@ -1,0 +1,147 @@
+
+/* Background Color */
+body {
+    background-color: #E8E6E0;
+}
+
+/* About Us Section CSS - Delaware Assure */
+
+/* .about-us-section { 
+	background-color: #80A2DA;
+	margin: 0px;
+	width: 100%;
+	height: 386px;
+	position: absolute;
+	left: 0px;
+	top: 56px;
+}
+
+.title-for-about-us { 
+	color:white;
+	width: 228px;
+	height: 32px;
+	position: absolute;
+	left: 210px;
+	top: 100px;
+	font-family: Lato;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.about-us-text { 
+	color: white;
+	width: 364px;
+	height: 88px;
+	position: absolute;
+	left: 210px;
+	top: 160px;
+	font-family: Lato;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.button-for-about-us {
+	width: 269px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #29B7DD;
+	color: white;
+	border: 0px solid white;
+	position:absolute;
+	left: 210px;
+	top: 340px;
+} */
+
+.d-assure{
+	padding: 40px;
+	color: white;
+}
+
+.about-us-text{
+	word-wrap: break-word;
+}
+
+.left_flex{
+	margin: 5%;
+	width: 65%; 
+	padding: 0;
+	margin-bottom: 5%;
+}
+.left_flex p{
+	font-size: 2.1vw;
+}
+
+.padding{
+	padding: 50px;
+}
+.learn_more{
+	margin-top: 3%;
+	border: none;
+	border-radius: 25px;
+	color:white;
+	background-color:#29B7DD;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.9vw;
+	padding: 10px 100px 10px 100px;
+}
+.learn_more:hover{
+	background-color:  rgb(33, 199, 199);
+	transition: background-color .5s;
+}
+.h2{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+}
+.h5{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 300;
+}
+.Resources{
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+.a{
+	padding: 90px 40px 90px 40px;
+	/* margin: 20px; */
+	margin-right: 6%;
+	margin-left: 6%;
+	margin-bottom: 5%;
+	cursor: pointer;
+	background-color: #80A2DA;
+	text-decoration: none;
+	color: rgb(255, 254, 254);
+}
+.a:hover{
+	background-color: #5e97f3;
+	transition: background-color .3s;
+	
+}
+.rightimage{
+	height: 400px;
+	padding: 0;
+	margin:0;
+}
+
+@media screen and (max-width:640px) {
+	/* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+	img{
+		display: none;
+	}
+	span{
+	  font-size: 6vw;
+	}
+	h1{
+	  font-size: 9vw;
+	}
+	h2{
+	  font-size: 6vw;
+	}
+	.a {
+		min-height: 1px;
+		padding-top: 5px;
+	}
+  }
