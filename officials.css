@@ -1,5 +1,6 @@
 body{
 background-color: #F5F7FF;
+font-family: Lato;
 }
 
 h2{
@@ -8,6 +9,12 @@ h2{
 
 .senate{
     margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#apply{
+    margin-right: 50px;
+
 }
 
 .container, .second-container, .third-container, .fourth-container, .final-container{
@@ -31,24 +38,30 @@ h2{
         }
 
         #img1, #img2, #img3, #img4, #img5{
-            margin-right: 100px;
+            
             height: 300px;
             width: 220px;
         }
 
         #para1, #para2, #para3, #para4, #para5{
             font-size: 25px;
+            margin-left: 100px;
         }
 
         @media (max-width: 800px) {
             .container, .second-container, .third-container, .fourth-container, .final-container {
               flex-direction: column;
+            
+            }
+            p{
+                font-size: 20px;
             }
             h2{
                 text-align: center;
             }
             .federal-container{
                 flex-direction: column;
+              
                 left: 0px;
             }
         }
@@ -57,8 +70,6 @@ h2{
             display: flex;
             justify-content: space-between;
             position: relative;
-            left: 50px;
-            top: 60px;
         }
 
         .group{
@@ -66,4 +77,15 @@ h2{
             height: 225px;
             width: 225px;
         }
-      
+
+        .group2{
+            height: 225px;
+            width: 225px;
+            margin-right: 550px;
+        }
+
+        a:hover{
+            background-color: #5e97f3;
+            transition: background-color .3s;
+            
+        }
