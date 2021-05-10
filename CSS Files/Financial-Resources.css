@@ -1,0 +1,18 @@
+body {
+    background-color: #E8E6E0;
+}
+
+.title-for-financial-resources {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.li-properties {
+    margin-top: -30px;
+}
+
+.div-main-contain {
+    margin-bottom: 50px;
+}

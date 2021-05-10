@@ -1,0 +1,28 @@
+body{
+    background : #c2ccf5 ;
+}
+h1 {
+    color: brown;
+    text-align: center;
+}
+.cry {
+
+    color:F5F7FF ;
+}
+.pic {
+
+    border-radius : 3%;
+    border-image: 30%;
+    float:left
+}
+table, th, td {
+    border: 1px solid black;
+  }
+
+.text{
+
+    float:right 
+}
+
+.top-buffer { margin: top 60px; }
+

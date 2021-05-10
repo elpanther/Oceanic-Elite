@@ -1,0 +1,76 @@
+
+/* Background Color */
+body {
+    background-color: #F5F7FF;
+    border-style: border-box;
+}
+
+.Title-Text {
+    color: #0A0949;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 48px;
+}
+
+.Financial-Resources-Box {
+    background-color: white;
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    left: 264px;
+    top: 226px;
+}
+
+.Financial-title {
+    color: rgba(0, 0, 0, 1);
+    width: 117px;
+    height: 18px;
+    position: absolute;
+    left: 15px;
+    top: 204px;
+    font-family: Mulish;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.20000000298023224;
+    line-height: px;
+}
+
+.Financial-text {
+    color: rgba(0, 0, 0, 1);
+    width: 252px;
+    height: 60px;
+    position: absolute;
+    left: 14px;
+    top: 237px;
+    font-family: Lato;
+    text-align: left;
+    font-size: 9px;
+    letter-spacing: 0.20000000298023224;
+    line-height: px;
+}
+
+.Financial-picture {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 280px;
+    height: 190px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url(images/picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Read-More {
+    color: #0057FF;
+    width: 77px;
+    height: 18px;
+    position: absolute;
+    left: 15px;
+    top: 317px;
+    font-family: Mulish;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.20000000298023224;
+    line-height: 1px;
+}

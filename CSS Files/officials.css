@@ -1,0 +1,91 @@
+body{
+background-color: #F5F7FF;
+font-family: Lato;
+}
+
+h2{
+    text-align: center;
+}
+
+.senate{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#apply{
+    margin-right: 50px;
+
+}
+
+.container, .second-container, .third-container, .fourth-container, .final-container{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    margin-left: 80px;
+    }
+
+    span{
+        font-size: 6vw;
+      }
+      
+        h2{
+            position: relative;
+            left: 20px;;
+        }
+        #img1{
+            position: relative;
+            right:10px;
+        }
+
+        #img1, #img2, #img3, #img4, #img5{
+            
+            height: 300px;
+            width: 220px;
+        }
+
+        #para1, #para2, #para3, #para4, #para5{
+            font-size: 25px;
+            margin-left: 100px;
+        }
+
+        @media (max-width: 800px) {
+            .container, .second-container, .third-container, .fourth-container, .final-container {
+              flex-direction: column;
+            
+            }
+            p{
+                font-size: 20px;
+            }
+            h2{
+                text-align: center;
+            }
+            .federal-container{
+                flex-direction: column;
+              
+                left: 0px;
+            }
+        }
+
+        .federal-container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .group{
+            margin-right: 225px;
+            height: 225px;
+            width: 225px;
+        }
+
+        .group2{
+            height: 225px;
+            width: 225px;
+            margin-right: 550px;
+        }
+
+        a:hover{
+            background-color: #5e97f3;
+            transition: background-color .3s;
+            
+        }
