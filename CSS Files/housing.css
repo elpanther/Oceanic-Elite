@@ -8,12 +8,14 @@ h2{
 
 .afford{
   display: flex;
-  flex-direction: ;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .homeless{
   display: flex;
-  flex-direction: right;
+ justify-content: space-between;
+ align-content: center;
 }
 
 * {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="global.css" rel="stylesheet">
+    <link href="/CSS Files/global.css" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
    
@@ -75,52 +75,64 @@
         <div class = "d-flex flex-row left_side border">
 
                     <!-- Mobile Pantry -->
+        <a href = "">
             <div class = "mobile p-2">
                     <!-- Image-->
                 <div class = "">
-                    <img src="Images used/Mobile Pantry.png" height= 75px; width = 85px;>
+                    <img src="/Images used/Mobile Pantry.png" height= 75px; width = 85px;>
                 </div>
                      <!-- Name -->
                 <span> Mobile Pantry </span>
-            </div>          
+            </div>   
+        </a>       
                     <!-- Food Bank -->
-    
+        <a href = "">
         <div class = "bank p-2">
                 <!-- Image-->
                 <div>
-                    <img src = "Images used/Food Bank.png" height = 75px; width = 85px;>
+                    <img src = "/Images used/Food Bank.png" height = 75px; width = 85px;>
                 </div>
                 <!-- Name -->
                 <span>Food Bank</span>
         </div>
+        </a>
+                    <!-- Hot Meals -->
+        <a href = ""> 
                     <!-- Hot Meals -->
             <div class = "meals p-2">
                 <!-- Image-->
                 <div class = "">
-                    <img src="Images used/Hot Meals.png" height = 75px; width = 85px;>
+                    <img src="/Images used/Hot Meals.png" height = 75px; width = 85px;>
                 </div>
                 <!-- Name -->
                 <span>Hot Meals</span>
             </div>
+        </a>
+                    <!-- Food Pantry -->
+        <a href = "">
                      <!-- Food Pantry -->
             <div class = "food p-2">
                 <!-- Image-->
                 <div>
-                    <img src = "Images used/Food Pantry (1).png" height= 75px; width = 85px;>
+                    <img src = "/Images used/Food Pantry (1).png" height= 75px; width = 85px;>
                 </div>
                 <!-- Name -->
                 <span>Food Pantry</span>
             </div>
+        </a>
+                    <!-- All Near Me -->
+        <a href = ""> 
                     <!-- All Near Me -->
             <div class = "all p-2">
                 <!-- Image-->
                 <div>
-                    <img src = "Images used/All near me.png" height= 75px; width = 85px;>
+                    <img src = "/Images used/All near me.png" height= 75px; width = 85px;>
                 </div>
                 <!-- Name -->
                 <span>All Near Me</span>
             </div>
-        </div>
+        </a>
+
             <!-- Filter -->
         <div class = "right_side">
             <p>
@@ -148,13 +160,14 @@
         </div>
     </section>
     
-    <section>
-        <div id= "map" style='width: 400px; height: 300px;'>
+    <!-- Maps -->
+    <section class = "d-flex flex-row-reverse">
+        <div id= "map" class = "map">
             
         </div>
         
             <!-- Location -->
-        <div>
+        <div class = "location">
         </div>
     </section>
     </main>
@@ -172,7 +185,7 @@
     $('.collapse').collapse()
 </script>
 
-<script src = "maps.js"></script>
+<script src = "/JS Files/maps.js"></script>
 
 </div>  
 
