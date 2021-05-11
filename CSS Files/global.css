@@ -18,6 +18,19 @@ height: 50vh;
 margin: 2%
 }
 
+a{
+  text-decoration: none;
+}
+
+.miniNav:hover{
+  color: rgb(75, 60, 60);
+  transition: transform .6s ease;
+  
+}
+
+.miniNav:hover img {
+  transform: scale(1.2);
+}
 
 @media screen and (max-width:640px) {
   /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
