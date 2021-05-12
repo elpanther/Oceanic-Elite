@@ -16,3 +16,7 @@ body {
 .div-main-contain {
     margin-bottom: 50px;
 }
+
+.footer p {  /* Selects text inside a <p> tag that is inside a .footer <div> */
+    margin-bottom: 0; /* removes default <p> tag margin from the bottom */
+}
