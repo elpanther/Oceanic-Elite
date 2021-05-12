@@ -21,7 +21,7 @@ h2{
     display: flex;
     margin-bottom: 30px;
     justify-content: space-between;
-    margin-left: 80px;
+    margin-left: 50px;
     }
 
     span{
@@ -32,13 +32,10 @@ h2{
             position: relative;
             left: 20px;;
         }
-        #img1{
-            position: relative;
-            right:10px;
-        }
+        
 
         #img1, #img2, #img3, #img4, #img5{
-            
+            margin-left: 60px;
             height: 300px;
             width: 220px;
         }
@@ -49,13 +46,17 @@ h2{
         }
 
         @media (max-width: 800px) {
+            
             .container, .second-container, .third-container, .fourth-container, .final-container {
               flex-direction: column;
+              margin-left: 0px;
+            }
             
+            #img1, #img2, #img3, #img4, #img5, #apply{
+               position: relative;
+               left: 90px;
             }
-            p{
-                font-size: 20px;
-            }
+            
             h2{
                 text-align: center;
             }
@@ -89,3 +90,16 @@ h2{
             transition: background-color .3s;
             
         }
+        .a{
+            padding: 90px 40px 90px 40px;
+            /* margin: 20px; */
+            margin-right: 6%;
+            margin-left: 6%;
+            margin-bottom: 5%;
+            cursor: pointer;
+            background-color: #80A2DA;
+            text-decoration: none;
+            color: rgb(255, 254, 254);
+        }
+
+      
