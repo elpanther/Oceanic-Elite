@@ -1,6 +1,3 @@
-body {
-    background-color: #E8E6E0;
-}
 
 .title-for-financial-resources {
     text-align: center;
@@ -17,6 +14,3 @@ body {
     margin-bottom: 50px;
 }
 
-.footer p {  /* Selects text inside a <p> tag that is inside a .footer <div> */
-    margin-bottom: 0; /* removes default <p> tag margin from the bottom */
-}
