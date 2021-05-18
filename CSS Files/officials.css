@@ -5,10 +5,10 @@ font-family: Lato;
 
 h4, h1{
     text-align: center;
-    
+    font-weight: bold;
 }
 
-.senate{
+h1{
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -33,7 +33,7 @@ h4, h1{
         
 
         #img1, #img2, #img3, #img4, #img5{
-            margin-left: 60px;
+            margin-left: 50px;
             height: 300px;
             width: 220px;
         }
@@ -97,8 +97,23 @@ h4, h1{
             color: rgb(255, 254, 254);
         }
 
-        #img1{
+        .resize{
             position: relative;
-            right: 65px;
+            right: 74px;
         }
-      
+
+        #apply{
+            position: relative;
+            right: 30px;
+        }
+        .president{
+            position: relative;
+            right: 74px;
+        }
+
+        .senator, #para1{
+            position: relative;
+            right: 74px;
+        }
+
+       
