@@ -66,3 +66,7 @@ a{
     font-size: 6vw;
   }
 }
+
+.footer p {
+  margin-bottom: 0; 
+}
