@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS Files/Page-Resources.css">
+        <link rel="stylesheet" href="../CSS Files/Filter.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link href="global.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -56,10 +57,27 @@
                 </ul>
         </nav>
 
+        <!-- Filter Code -->
+
+      <div class="Filter1">
+          <h2><span>Filter</span></h2>
+      </div>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+        <ul id="myUL">
+            <li><a href="#Financial">Financial Resources</a></li>
+            <li><a href="#Military">Military Resources</a></li>
+            <li><a href="#Jobs">Jobs Resources</a></li>
+            <li><a href="#">Healthy Lifestyle Resources</a></li>
+            <li><a href="#">Scholarships Resources</a></li>
+            <li><a href="#">FAFSA Resources</a></li>
+        </ul>
+
         <!-- Main Content For Financial Resources -->
 
-        <div class="title-main">
-          <h1><span>Financial Resources</span></h1>
+      <div class="title-main">
+          <h1 id="Financial"><span>Financial Resources</span></h1>
       </div>
 
       <div class="container">
@@ -149,13 +167,13 @@
         <!-- Main Content For Military Resources -->
 
         <div class="title-2">
-            <h1><span>Military Resources</span></h1>
+            <h1 id="Military"><span>Military Resources</span></h1>
         </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <img src="Pictures/stock-military-benefit-18.jpg" alt="Credit Score Ranges">
+                    <img src="Pictures/stock-military-benefit-18.jpg" alt="Military Service Benefits Picture">
                 </div>
                 <div class="col-md-5 div-main-contain">
                     <h4><span>Military Benefits</span></h4>
@@ -187,7 +205,7 @@
           <div class="container">
               <div class="row">
                 <div class="col-md-7">
-                    <img src="Pictures/ee0ac332e23b643b9d745de6b2713e15.jpg" alt="Track Your Expenses Picture">
+                    <img src="Pictures/ee0ac332e23b643b9d745de6b2713e15.jpg" alt="U.S. Military Six Branches Of Service Logo Picture">
                 </div>
                 <div class="col-md-5 div-main-contain">
                     <h4><span>U.S. Military Six Branches Of Service</span></h4>
@@ -219,7 +237,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-7">
-                  <img src="Pictures/army.jpg" alt="Track Your Expenses Picture">
+                  <img src="Pictures/army.jpg" alt=" U.S Army Recruiting Picture">
               </div>
               <div class="col-md-5 div-main-contain">
                   <h4><span>Join the Military as an Enlisted Member</span></h4>
@@ -287,6 +305,91 @@
             </div>
         </div>
 
+        <!-- Main Content For Jobs Resources -->
+
+        <div class="title-2">
+          <h1 id="Jobs"><span>Jobs Resources</span></h1>
+      </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-7">
+                  <img src="Pictures/2020-04-08-scaled.webp" alt="Jobs Picture" class="Jobs1">
+              </div>
+              <div class="col-md-5 div-main-contain">
+                  <h4><span>Jobs</span></h4>
+                  <p>At a point in your life, you wanted to buy something. Maybe it's a phone, games, clothes, or even want to spend money going out and eating food. All of those items and food cost money. The world revolves around money. The best way to earn money is to work for it and get a job.</p>
+                  <h4><span>Why is having a job important?</span></h4>
+                  <p>Even if you didn't have anything you wanted to buy, having money is always great and having a job helps you achieve that. Having a job can help you with other things too. Like it can boost your self-esteem and confidence by giving you purpose, and it's much easier to be happy when you feel your worth.</p>
+                  <h4><span>How do you get a job?</span></h4>
+                  <p>The best way to find a job is by looking around online. We are in the technology age, and with a simple google search, you can find an available position in your area.</p>
+                  <p>Here Is Some Jobs Search Engine Website:</p><br>
+                  <div class="li-properties">
+                    <ul>
+                        <li><a href="https://www.simplyhired.com/">Simply Hired</a></li>
+                        <li><a href="https://www.glassdoor.com/index.htm">Glassdoor</a></li>
+                        <li><a href="https://www.indeed.com/">Indeed</a></li>
+                    </ul> 
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                  <img src="Pictures/_340594_resumeanatomy.hero.jpg" alt="Track Your Expenses Picture" class="Jobs1">
+              </div>
+              <div class="col-md-5 div-main-contain">
+                  <h4><span>What is a Resume?</span></h4>
+                  <p>The term resume comes from the French and means a "summary." So that's what your resume is: A summary of your qualifications, skills, and achievements. It shows a future employer what you have done in the past. It details your skills and training, work experience, education, and, most importantly, the accomplishments you have made with past employers.</p>
+                  <p>It should also inform the employer of your career objective (the job you are seeking) and communicate concisely the benefits you will bring to the job if hired.</p>
+                  <p>A resume is an advertisement. It advertises you, your unique skills and qualifications, and stresses the benefits you have to offer.</p>
+                  <h4><span>Why is having a Resume important?</span></h4>
+                  <p>The resume has become the number one requirement potential employers request. Before an employer takes valuable time to interview you, he or she wants to meet you – on paper. How you impress that employer with your resume can, and will, make all the difference.</p>
+                  <p>Without a resume, you can't even begin to compete, and an inferior overview will quickly eliminate you before you even have a fighting chance. That is why it is imperative to have a superior resume, one that effectively lets employers know what you can do for them.</p>
+                  <h4><span>Where do I make a Resume?</span></h4>
+                  <P>On the internet, there are lots of websites dedicated to helping you make a resume.</P>
+                  <p>Here Is Some Resume Template Website:</p><br>
+                  <div class="li-properties">
+                    <ul>
+                        <li><a href="https://www.canva.com/design/play?template=EAD7WZB4x4Y&category=tACZCki4tbY&type=TACQ-qm91ig">Canva</a></li>
+                        <li><a href="https://novoresume.com/resume-templates">Novoresume</a></li>
+                        <li><a href="https://resumegenius.com/resume-templates">Resumegenius</a></li>
+                    </ul> 
+                </div>
+                <h4><span>Here is A Video On Tips to Write A Good Resume By Jeff Su:</span></h4>
+                <a href="https://youtu.be/Tt08KmFfIYQ">Tips to Write A Good Resume</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+                <img src="Pictures/resized.jpg" alt="Track Your Expenses Picture" class="Jobs1">
+            </div>
+            <div class="col-md-5 div-main-contain">
+                <h4><span>What is a cover letter?</span></h4>
+                <p>A cover letter is a one-page message sent with an application that provides information about the position you're applying for, your qualifications about the role, and why you're interested in working for the company. A well-written cover letter can help you stand out from the rest of the competition.</p>
+                <h4><span>How important is a cover letter?</span></h4>
+                <p>Some companies value cover letters more than others, depending on the position you apply for, but it's still an essential tool for you to use that can help you get noticed.</p>
+                <p>Here are a few reasons why a cover letter can help you get the job:</p><br>
+                  <div class="li-properties">
+                    <ul>
+                        <li>It tells your story</li>
+                        <li>It builds a relationship with the employer</li>
+                        <li>It explains your relationship with someone who referred you</li>
+                    </ul> 
+                </div>
+                <h4><span>Here is A Cover Letter Template Website:</span></h4>
+                <a href="https://zety.com/cover-letter-builder">Cover Letter Website</a>
+                <h4><span>Here is A Video On Tips to Write A Cover Letter By Professor Heather Austin:</span></h4>
+                <a href="https://youtu.be/ycKMs2FDbs0">Tips to Write A Cover Letter</a>
+            </div>
+          </div>
+      </div>
+
         <!-- Footer Code -->
 
         <div class="my-5">
@@ -331,22 +434,22 @@
       
                     <ul class="list-unstyled">
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Food Resources</a>
+                        <a href="../Food Resources Folder/food_services.html" class="text-white"><i class="fas fa-paw pe-3"></i>Food Resources</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Housing Resources</a>
+                        <a href="../Housing Folder/housing.html" class="text-white"><i class="fas fa-paw pe-3"></i>Housing Resources</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Mental Health Resources</a>
+                        <a href="../Mental Health Folder/newmentalhealth.html" class="text-white"><i class="fas fa-paw pe-3"></i>Mental Health Resources</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Student Resources </a>
+                        <a href="../Student Resources Folder/Students-Resources.html" class="text-white"><i class="fas fa-paw pe-3"></i>Student Resources </a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Public Officials</a>
+                        <a href="../Public Officials Folder/federal.html" class="text-white"><i class="fas fa-paw pe-3"></i>Public Officials</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Other Resources</a>
+                        <a href="../Other Resources Folder/federal-grants.html" class="text-white"><i class="fas fa-paw pe-3"></i>Other Resources</a>
                       </li>
                     </ul>
                   </div>
@@ -358,16 +461,16 @@
       
                     <ul class="list-unstyled">
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About Us</a>
+                        <a href="../Website Related Folder/About-Us.html" class="text-white"><i class="fas fa-paw pe-3"></i>About Us</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact Us</a>
+                        <a href="../Website Related Folder/Contact-Us.html" class="text-white"><i class="fas fa-paw pe-3"></i>Contact Us</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Terms of Service</a>
+                        <a href="../Website Related Folder/Terms-Of-Service.html" class="text-white"><i class="fas fa-paw pe-3"></i>Terms of Service</a>
                       </li>
                       <li class="mb-2">
-                        <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Privacy Policy</a>
+                        <a href="../Website Related Folder/Privacy-Policy.html" class="text-white"><i class="fas fa-paw pe-3"></i>Privacy Policy</a>
                       </li>
                     </ul>
                   </div>
@@ -414,7 +517,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-            <script src="" async defer></script>
+            <script src="../JS Files/Filter.js"></script>
 
     </body>
 </html>
