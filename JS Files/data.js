@@ -1,5 +1,5 @@
 const tBody = document.getElementById("T_Body")
-
+const eachElement = document.getElementById("info")
 
 
 const data = [
@@ -720,27 +720,32 @@ const data = [
 
     // Food pantry
     // Filter
-    let foodPantry = data.filter(function(ele){
+    let foodPantry = () => { 
+        let fdPantry = data.filter(function(ele){
         return ele.Type == "Food Pantry"
-    });
+    })
+        return fdPantry 
+}
+   
 
-   
-   
-    console.log(foodPantry)
 
     //Mobile Pantry
     //Filter
-    let mobilePantry = data.filter(function(ele){
+    let mobilePantry = () => { 
+        let mobile = data.filter(function(ele){
         return ele.Type == "Mobile Pantry"
-    });
-    console.log(mobilePantry)
-
+    })
+        return mobile
+}
     //Food Bank
     //Filter
-    let foodBank = data.filter(function(ele){
+    let foodBank = () => {
+        let food = data.filter(function(ele){
         return ele.Type == "Food Bank"
-    });
-    
+    })
+        return food 
+}
+
 
     //Hot meals
     //Filter
@@ -754,20 +759,37 @@ let hotMeals = () => {
     return meal 
 }
 
-function showHotMeals(){
-document.getElementById("Hot_Meals").addEventListener("click", function(){
-    hotMeals().forEach(function(n){
-        tBody.innerHTML = `<tr>
-        <td>${n.Facility_Name}</td>
+function showItems(func, id){
+document.getElementById(id).addEventListener("click", function(){
+         func().forEach(function (n) {
+            tBody.innerHTML += ` <tr>
+            <td>${n.Facility_Name}</td>
+            <td>${n.Type}</td>
+            <td>${n.County}</td>
+            <td>${n.City}</td>
+            <td>${n.Address}</td> 
+            <td>${n.Phone_number}</td> 
+            <td>${n.Requirements}</td> 
+            <td>${n.Additional_info}</td> 
+            <td> <ul>
+            <li> Monday: ${n.Hours[0].Monday} </li>
+            <li> Tuesday: ${n.Hours[0].Tuesday} </li>
+            <li> Wednesday: ${n.Hours[0].Tuesday} </li>
+            <li> Thursday: ${n.Hours[0].Tuesday} </li>
+            <li> Friday: ${n.Hours[0].Tuesday} </li>
+            <li> Saturday: ${n.Hours[0].Tuesday} </li>
+            <li> Sunday: ${n.Hours[0].Tuesday} </li>
+            </ul> </td> 
+            </tr> `
+})}
 
-        
-        </tr>`
-    })
-})
-}
+)}
 
-showHotMeals()
-    
+    showItems(hotMeals, "Hot_Meals")
+    showItems(foodBank, "Food_Bank")
+    showItems(mobilePantry, "Mobile_Pantry")
+    showItems(foodPantry, "Food_Pantry")
+
     //
     //All near me
 
@@ -783,7 +805,10 @@ showHotMeals()
                 center: [-75.5779807,39.0084464],
                 zoom: 8.5
     });
+
     map.addControl(new mapboxgl.NavigationControl());
+
+
 
                 // add markers to map
         data.forEach(function (marker) {
@@ -802,6 +827,6 @@ showHotMeals()
                 <p>Type: <strong>${marker.Type} </strong></p>
                 <button> Directions </button>`))    
                 .addTo(map);
+                
     });
     
-

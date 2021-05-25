@@ -75,8 +75,8 @@
         <div class = "d-flex flex-row left_side border">
 
                     <!-- Mobile Pantry -->
-        <a class = "miniNav" id = "Mobile_Pantry" href = "">
-            <div class = "mobile p-2">
+        <a class = "miniNav" id = "Mobile_Pantry">
+            <div class = "mobile p-2" id = "Mobile_Pantry">
                     <!-- Image-->
                 <div class = "">
                     <img src="/Images used/Mobile Pantry.png" height= 75px; width = 85px;>
@@ -86,7 +86,7 @@
             </div>   
         </a>       
                     <!-- Food Bank -->
-        <a class = "miniNav" id = "Food_Bank" href = "">
+        <a class = "miniNav" id = "Food_Bank">
         <div class = "bank p-2">
                 <!-- Image-->
                 <div>
@@ -97,7 +97,7 @@
         </div>
         </a>
                     <!-- Hot Meals -->
-        <a class = "miniNav" id = "Hot_Meals" href = ""> 
+        <a class = "miniNav" id = "Hot_Meals" > 
                     <!-- Hot Meals -->
             <div class = "meals p-2">
                 <!-- Image-->
@@ -109,9 +109,9 @@
             </div>
         </a>
                     <!-- Food Pantry -->
-        <a class = "miniNav" href = "">
+        <a class = "miniNav">
                      <!-- Food Pantry -->
-            <div class = "food p-2">
+            <div class = "food p-2" id = "Food_Pantry">
                 <!-- Image-->
                 <div>
                     <img src = "/Images used/Food Pantry (1).png" height= 75px; width = 85px;>
@@ -121,7 +121,7 @@
             </div>
         </a>
                     <!-- All Near Me -->
-        <a class = "miniNav" href = ""> 
+        <a class = "miniNav" id = "All_Near_Me"> 
                     <!-- All Near Me -->
             <div class = "all p-2">
                 <!-- Image-->
@@ -144,13 +144,14 @@
     </section>
     
     <!-- Maps -->
-    <section class = "d-flex flex-row-reverse">
+    <section class = "d-flex flex-row-reverse container-fluid">
         <div id= "map" class = "map">
             
         </div>
         
             <!-- Location -->
-        <div class = "location">
+        <div class = "location container">
+        
             <table>
                 <thead>
                 <tr>
@@ -165,7 +166,10 @@
                 <th>Hours of Operation</th>
                 </tr>
                 </thead>
-                <tbody id = "T_Body">
+                <tbody id = "T_Body" class = "container-fluid">
+                    <div id = "info">
+
+                    </div>
                 </tbody>
                 </table>
 
