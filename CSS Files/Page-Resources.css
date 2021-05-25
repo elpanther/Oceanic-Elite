@@ -1,18 +1,21 @@
-body {
-    background-color: #E8E6E0;
-}
 
-.title-for-financial-resources {
+.title-main {
     text-align: center;
     font-weight: bold;
     margin-top: 35px;
     margin-bottom: 35px;
 }
 
-.li-for-credit-score {
+.li-properties {
     margin-top: -30px;
 }
 
-.div-main-contain-for-credot-score {
+.div-main-contain {
     margin-bottom: 50px;
+}
+
+.title-2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
 }
