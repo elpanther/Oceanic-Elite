@@ -80,22 +80,6 @@ h1{
             margin-right: 550px;
         }
 
-        a:hover{
-            background-color: #5e97f3;
-            transition: background-color .3s;
-            
-        }
-        .a{
-            padding: 90px 40px 90px 40px;
-            /* margin: 20px; */
-            margin-right: 6%;
-            margin-left: 6%;
-            margin-bottom: 5%;
-            cursor: pointer;
-            background-color: #80A2DA;
-            text-decoration: none;
-            color: rgb(255, 254, 254);
-        }
 
         .resize{
             position: relative;
