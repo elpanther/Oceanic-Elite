@@ -1,6 +1,7 @@
 body{
-    background : #c2ccf5 ;
-}
+    background-color: #F5F7FF;
+    font-family: Lato;
+    }
 h1 {
     color: brown;
     text-align: center;
@@ -15,7 +16,7 @@ h1 {
     border-image: 30%;
     float:left
     max-width:50%;
-    height:auto;
+    height:80%;
 }
 table, th, td {
     border: 1px solid black;
