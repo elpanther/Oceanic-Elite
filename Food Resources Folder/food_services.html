@@ -8,7 +8,7 @@
     <link href="/CSS Files/global.css" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
-    <script type="text/javascript" src="../JS Files/data.js"></script>
+    
     <title>Food Services</title>
 </head>
 <body>
@@ -75,8 +75,8 @@
         <div class = "d-flex flex-row left_side border">
 
                     <!-- Mobile Pantry -->
-        <a class = "miniNav" href = "">
-            <div class = "mobile p-2">
+        <a class = "miniNav" id = "Mobile_Pantry">
+            <div class = "mobile p-2" id = "Mobile_Pantry">
                     <!-- Image-->
                 <div class = "">
                     <img src="/Images used/Mobile Pantry.png" height= 75px; width = 85px;>
@@ -86,7 +86,7 @@
             </div>   
         </a>       
                     <!-- Food Bank -->
-        <a class = "miniNav" href = "">
+        <a class = "miniNav" id = "Food_Bank">
         <div class = "bank p-2">
                 <!-- Image-->
                 <div>
@@ -97,7 +97,7 @@
         </div>
         </a>
                     <!-- Hot Meals -->
-        <a class = "miniNav" href = ""> 
+        <a class = "miniNav" id = "Hot_Meals" > 
                     <!-- Hot Meals -->
             <div class = "meals p-2">
                 <!-- Image-->
@@ -109,9 +109,9 @@
             </div>
         </a>
                     <!-- Food Pantry -->
-        <a class = "miniNav" href = "">
+        <a class = "miniNav">
                      <!-- Food Pantry -->
-            <div class = "food p-2">
+            <div class = "food p-2" id = "Food_Pantry">
                 <!-- Image-->
                 <div>
                     <img src = "/Images used/Food Pantry (1).png" height= 75px; width = 85px;>
@@ -121,7 +121,7 @@
             </div>
         </a>
                     <!-- All Near Me -->
-        <a class = "miniNav" href = ""> 
+        <a class = "miniNav" id = "All_Near_Me"> 
                     <!-- All Near Me -->
             <div class = "all p-2">
                 <!-- Image-->
@@ -133,24 +133,7 @@
             </div>
         </a>
 
-            <!-- Filter -->
         <div class = "right_side">
-            <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Filter
-                </a>
-              </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -161,19 +144,42 @@
     </section>
     
     <!-- Maps -->
-    <section class = "d-flex flex-row-reverse">
+    <section class = "d-flex flex-row-reverse container-fluid">
         <div id= "map" class = "map">
             
         </div>
         
             <!-- Location -->
-        <div class = "location">
+        <div class = "location container">
+        
+            <table>
+                <thead>
+                <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>County</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Requirements</th>
+                <th>Additonal Info</th>
+                <th>Hours of Operation</th>
+                </tr>
+                </thead>
+                <tbody id = "T_Body" class = "container-fluid">
+                    <div id = "info">
+
+                    </div>
+                </tbody>
+                </table>
+
         </div>
     </section>
     </main>
 
     <footer>
     </footer>
+
 
 <div>   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -186,6 +192,7 @@
 </script>
 
 <script src = "/JS Files/maps.js"></script>
+<script src = "/JS Files/data.js"></script>
 
 
 </div>  

@@ -1,4 +1,8 @@
-data = [
+const tBody = document.getElementById("T_Body")
+const eachElement = document.getElementById("info")
+
+
+const data = [
     {
     Facility_Name: "William State Service Center",
     Latitude: "39.15377",
@@ -712,8 +716,117 @@ data = [
                                                                                                                             
                                                                                                                         ]
                                                                                                                     }
-                                                                                                                ]
-console.log(data.length)
-  
+]
+
+    // Food pantry
+    // Filter
+    let foodPantry = () => { 
+        let fdPantry = data.filter(function(ele){
+        return ele.Type == "Food Pantry"
+    })
+        return fdPantry 
+}
+   
 
 
+    //Mobile Pantry
+    //Filter
+    let mobilePantry = () => { 
+        let mobile = data.filter(function(ele){
+        return ele.Type == "Mobile Pantry"
+    })
+        return mobile
+}
+    //Food Bank
+    //Filter
+    let foodBank = () => {
+        let food = data.filter(function(ele){
+        return ele.Type == "Food Bank"
+    })
+        return food 
+}
+
+
+    //Hot meals
+    //Filter
+    // let hotMeals = data.filter(function(ele){
+    //     return ele.Type == "Hot Meals"
+    // });
+let hotMeals = () => {
+    let meal = data.filter(function(ele){
+        return ele.Type == "Hot Meals"
+    })
+    return meal 
+}
+
+function showItems(func, id){
+document.getElementById(id).addEventListener("click", function(){
+         func().forEach(function (n) {
+            tBody.innerHTML += ` <tr>
+            <td>${n.Facility_Name}</td>
+            <td>${n.Type}</td>
+            <td>${n.County}</td>
+            <td>${n.City}</td>
+            <td>${n.Address}</td> 
+            <td>${n.Phone_number}</td> 
+            <td>${n.Requirements}</td> 
+            <td>${n.Additional_info}</td> 
+            <td> <ul>
+            <li> Monday: ${n.Hours[0].Monday} </li>
+            <li> Tuesday: ${n.Hours[0].Tuesday} </li>
+            <li> Wednesday: ${n.Hours[0].Tuesday} </li>
+            <li> Thursday: ${n.Hours[0].Tuesday} </li>
+            <li> Friday: ${n.Hours[0].Tuesday} </li>
+            <li> Saturday: ${n.Hours[0].Tuesday} </li>
+            <li> Sunday: ${n.Hours[0].Tuesday} </li>
+            </ul> </td> 
+            </tr> `
+})}
+
+)}
+
+    showItems(hotMeals, "Hot_Meals")
+    showItems(foodBank, "Food_Bank")
+    showItems(mobilePantry, "Mobile_Pantry")
+    showItems(foodPantry, "Food_Pantry")
+
+    //
+    //All near me
+
+// Map Box
+
+    
+    mapboxgl.accessToken = "pk.eyJ1Ijoic2xvd2Jybzg5MCIsImEiOiJja29peGYzYmUwczc5Mm5rMnNnaHI2ZDhvIn0.2WzdsUMONapZbsQ-m0hYLw"
+
+    
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11', // replace this with your style URL
+                center: [-75.5779807,39.0084464],
+                zoom: 8.5
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+
+
+                // add markers to map
+        data.forEach(function (marker) {
+            // create a HTML element for each feature
+            var el = document.createElement('div');
+            el.className = 'marker';
+     
+            // make a marker for each feature and add it to the map
+            new mapboxgl.Marker(el)
+            .setLngLat([marker.Langitude , marker.Latitude])
+            .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML(
+            `<h3> ${marker.Facility_Name} </h3>
+                <p>Phone Number: <strong>${marker.Phone_number} </strong></p>
+                <p>Address: <strong>${marker.Address} </strong></p> 
+                <p>Type: <strong>${marker.Type} </strong></p>
+                <button> Directions </button>`))    
+                .addTo(map);
+                
+    });
+    
