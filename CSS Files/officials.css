@@ -100,4 +100,7 @@ h1{
             right: 74px;
         }
 
-       
+        .nav-item{
+            position: relative;
+            left: 850px;
+          }
