@@ -25,3 +25,7 @@
     height:500px;
 }
 
+.nav-item{
+    position: relative;
+    left: 850px;
+  }

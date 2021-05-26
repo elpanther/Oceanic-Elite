@@ -29,3 +29,7 @@ table, th, td {
 
 .top-buffer { margin: top 60px; }
 
+.nav-item{
+    position: relative;
+    left: 850px;
+  }
