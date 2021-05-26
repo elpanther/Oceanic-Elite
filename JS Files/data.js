@@ -727,6 +727,7 @@ const data = [
         return fdPantry 
 }
    
+   
 
 
     //Mobile Pantry
@@ -825,6 +826,7 @@ document.getElementById(id).addEventListener("click", function(){
                 <p>Phone Number: <strong>${marker.Phone_number} </strong></p>
                 <p>Address: <strong>${marker.Address} </strong></p> 
                 <p>Type: <strong>${marker.Type} </strong></p>
+                <p>Requirements: <strong>${marker.Requirements} </strong></p>
                 <button> Directions </button>`))    
                 .addTo(map);
                 

@@ -8,7 +8,7 @@
     <link href="/CSS Files/global.css" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Food Services</title>
 </head>
 <body>
@@ -76,7 +76,7 @@
 
                     <!-- Mobile Pantry -->
         <a class = "miniNav" id = "Mobile_Pantry">
-            <div class = "mobile p-2" id = "Mobile_Pantry">
+            <div class = "mobile p-2">
                     <!-- Image-->
                 <div class = "">
                     <img src="/Images used/Mobile Pantry.png" height= 75px; width = 85px;>
@@ -86,7 +86,7 @@
             </div>   
         </a>       
                     <!-- Food Bank -->
-        <a class = "miniNav" id = "Food_Bank">
+        <a class = "miniNav " id = "Food_Bank" onclick= "doSomething(Food_Bank) ">
         <div class = "bank p-2">
                 <!-- Image-->
                 <div>
@@ -95,9 +95,9 @@
                 <!-- Name -->
                 <span>Food Bank</span>
         </div>
-        </a>
+    </a>
                     <!-- Hot Meals -->
-        <a class = "miniNav" id = "Hot_Meals" > 
+        <a class = "miniNav " id = "Hot_Meals" > 
                     <!-- Hot Meals -->
             <div class = "meals p-2">
                 <!-- Image-->
@@ -109,9 +109,9 @@
             </div>
         </a>
                     <!-- Food Pantry -->
-        <a class = "miniNav">
+        <a class = "miniNav" id = "Food_Pantry">
                      <!-- Food Pantry -->
-            <div class = "food p-2" id = "Food_Pantry">
+            <div class = "food p-2 ">
                 <!-- Image-->
                 <div>
                     <img src = "/Images used/Food Pantry (1).png" height= 75px; width = 85px;>
@@ -121,7 +121,7 @@
             </div>
         </a>
                     <!-- All Near Me -->
-        <a class = "miniNav" id = "All_Near_Me"> 
+        <a class = "miniNav " id = "All_Near_Me"> 
                     <!-- All Near Me -->
             <div class = "all p-2">
                 <!-- Image-->
@@ -193,6 +193,13 @@
 
 <script src = "/JS Files/maps.js"></script>
 <script src = "/JS Files/data.js"></script>
+
+
+
+<script>
+  
+
+</script>
 
 
 </div>  
