@@ -1,0 +1,74 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+background-color: #F5F7FF;
+}
+
+.left_side{
+  padding: 2%;
+  margin-right: 2%;
+}
+
+#map {
+width: 50vw;
+height: 70vh;
+margin: 2%
+}
+
+a{
+  text-decoration: none;
+}
+
+.miniNav:hover{
+  color: rgb(75, 60, 60);
+  transition: transform .6s ease;
+  
+}
+
+.miniNav:hover img {
+  transform: scale(1.2);
+}
+
+.mapboxgl-popup {
+  max-width: 150px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.marker {
+  background-image: url('../Images\ used/Locations.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.location{
+  width: 40%;
+}
+
+@media screen and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+  img{
+      display: none;
+  }
+  span{
+    font-size: 4vw;
+  }
+  h1{
+    font-size: 9vw;
+  }
+  h2{
+    font-size: 6vw;
+  }
+}
+
+.footer p {
+  margin-bottom: 0; 
+}

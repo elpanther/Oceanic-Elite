@@ -1,0 +1,31 @@
+
+.title-main {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.li-properties {
+    margin-top: -30px;
+}
+
+.div-main-contain {
+    margin-bottom: 50px;
+}
+
+.title-2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.Jobs1 {
+    width:700px;
+    height:500px;
+}
+
+.nav-item{
+    position: relative;
+    left: 850px;
+  }
